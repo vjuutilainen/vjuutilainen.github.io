@@ -23,7 +23,7 @@ var updatePage = function(data){
 
 	data.forEach(function(item,index,array){
 
-		if(item.description !== '' && item.language === "JavaScript"){
+		if(item.description !== '' && item.language === "JavaScript" && item.fork === false){
 		var projectName = item.description;
 		var projectElement = document.createElement('a');
 		projectElement.className = 'project';
